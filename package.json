@@ -1,6 +1,6 @@
 {
   "name": "env-haven",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Validate .env files against a JSON schema — catch misconfiguration before it reaches production",
   "type": "module",
   "bin": {
