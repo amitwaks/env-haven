@@ -206,4 +206,4 @@ process.exit(report.summary.failed > 0 ? 1 : 0);
 
 ## License
 
-MIT. Built by [amitwaks](https://github.com/amitwaks).
+MIT.
