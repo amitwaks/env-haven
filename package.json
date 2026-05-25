@@ -1,0 +1,48 @@
+{
+  "name": "env-haven",
+  "version": "1.0.1",
+  "description": "Validate .env files against a JSON schema — catch misconfiguration before it reaches production",
+  "type": "module",
+  "bin": {
+    "env-haven": "bin/cli.js"
+  },
+  "main": "./dist/index.js",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "bin/",
+    "dist/"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "prepublish": "npm run build",
+    "test": "node --test dist/*.test.js"
+  },
+  "keywords": [
+    "env",
+    "dotenv",
+    "validation",
+    "environment",
+    "cli",
+    "config"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amitwaks/env-haven.git"
+  },
+  "homepage": "https://github.com/amitwaks/env-haven",
+  "bugs": "https://github.com/amitwaks/env-haven/issues",
+  "funding": "https://github.com/sponsors/amitwaks",
+  "engines": {
+    "node": ">=18"
+  },
+  "devDependencies": {
+    "@types/node": "^25.9.1",
+    "typescript": "^6.0.3"
+  }
+}
