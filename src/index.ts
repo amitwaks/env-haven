@@ -11,15 +11,15 @@ export type { Config, VarSpec, VarResult, ValidationReport } from "./types.js";
 
 function printHelp(): void {
   console.log(`
-checkmyenv - Validate .env files against a JSON schema
+env-haven — Validate .env files against a JSON schema
 
 USAGE
-  checkmyenv                 Validate .env against checkmyenv.config.json
-  checkmyenv generate        Generate .env.example from config
-  checkmyenv types           Generate TypeScript type definitions
-  checkmyenv --json          Output validation as JSON
-  checkmyenv --help          Show this help
-  checkmyenv --version       Show version
+  env-haven                 Validate .env against checkmyenv.config.json
+  env-haven generate        Generate .env.example from config
+  env-haven types           Generate TypeScript type definitions
+  env-haven --json          Output validation as JSON
+  env-haven --help          Show this help
+  env-haven --version       Show version
 
 CONFIG
   Create a checkmyenv.config.json in project root:
@@ -68,8 +68,8 @@ function main(): void {
 
   const configPath = findConfig();
   if (!configPath) {
-    console.error("checkmyenv: No config file found (checkmyenv.config.json, .checkmyenvrc, etc.)");
-    console.error("Run `checkmyenv --help` for usage.");
+    console.error("env-haven: No config file found (checkmyenv.config.json, .checkmyenvrc, etc.)");
+    console.error("Run `env-haven --help` for usage.");
     process.exit(1);
   }
 
@@ -80,11 +80,11 @@ function main(): void {
     const example = generateEnvExample(config);
     const outPath = resolve(cwd, ".env.example");
     if (existsSync(outPath) && !process.argv.includes("--force")) {
-      console.error(`checkmyenv: ${outPath} already exists. Use --force to overwrite.`);
+      console.error(`env-haven: ${outPath} already exists. Use --force to overwrite.`);
       process.exit(1);
     }
     writeFileSync(outPath, example);
-    console.log(`checkmyenv: Generated ${outPath}`);
+    console.log(`env-haven: Generated ${outPath}`);
     process.exit(0);
   }
 
@@ -92,7 +92,7 @@ function main(): void {
     const types = generateTypeScriptTypes(config);
     const outPath = resolve(cwd, "env.d.ts");
     writeFileSync(outPath, types);
-    console.log(`checkmyenv: Generated ${outPath}`);
+    console.log(`env-haven: Generated ${outPath}`);
     process.exit(0);
   }
 

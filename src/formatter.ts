@@ -21,7 +21,7 @@ export function formatReport(report: ValidationReport): string {
   const lines: string[] = [];
   const { summary } = report;
 
-  lines.push(`${BOLD}checkmyenv${RESET} — Environment Variable Validation\n`);
+  lines.push(`${BOLD}env-haven${RESET} — Environment Variable Validation\n`);
 
   for (const r of report.results) {
     if (r.passed && r.errors.length === 0) {
