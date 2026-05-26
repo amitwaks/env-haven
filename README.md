@@ -7,6 +7,7 @@
 [![node](https://img.shields.io/node/v/env-haven?color=%23339933&logo=node.js&style=flat-square)](https://nodejs.org)
 [![bundle size](https://img.shields.io/bundlephobia/minzip/env-haven?color=%23ff69b4&label=size&style=flat-square)](https://www.npmjs.com/package/env-haven)
 [![github](https://img.shields.io/badge/github-amitwaks%2Fenv--haven-%23181717?logo=github&style=flat-square)](https://github.com/amitwaks/env-haven)
+[![ko-fi](https://img.shields.io/badge/support-ko--fi-%23FF5E5B?logo=ko-fi&style=flat-square)](https://ko-fi.com/amitwaks)
 
 ---
 
