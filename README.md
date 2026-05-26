@@ -5,7 +5,7 @@
 [![npm](https://img.shields.io/npm/v/env-haven?color=%2325c2a0&label=env-haven&logo=npm&style=flat-square)](https://www.npmjs.com/package/env-haven)
 [![license](https://img.shields.io/npm/l/env-haven?color=%23000&style=flat-square)](https://github.com/amitwaks/env-haven/blob/master/LICENSE)
 [![node](https://img.shields.io/node/v/env-haven?color=%23339933&logo=node.js&style=flat-square)](https://nodejs.org)
-[![bundle size](https://img.shields.io/bundlephobia/min/env-haven?color=%23ff69b4&label=size&style=flat-square)](https://www.npmjs.com/package/env-haven)
+[![bundle size](https://img.shields.io/bundlephobia/minzip/env-haven?color=%23ff69b4&label=size&style=flat-square)](https://www.npmjs.com/package/env-haven)
 [![github](https://img.shields.io/badge/github-amitwaks%2Fenv--haven-%23181717?logo=github&style=flat-square)](https://github.com/amitwaks/env-haven)
 
 ---
@@ -32,7 +32,7 @@ npx env-haven generate # scaffold .env.example
 - **Clear error messages** — know exactly which variable failed and why
 - **TypeScript types** — generate `env.d.ts` from your schema in one command
 - **`.env.example` generation** — always up to date with your schema
-- **Zero dependencies** — 5 KB gzipped, installs instantly
+- **Zero dependencies** — 3.5 kB gzipped, installs instantly
 - **CI-ready** — exit code `0` on pass, `1` on fail
 
 ---

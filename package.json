@@ -19,7 +19,8 @@
   ],
   "scripts": {
     "build": "tsc",
-    "prepublish": "npm run build",
+    "prepublish": "npm run build && node -e \"require('fs').globSync('dist/**/*.test.*').forEach(f=>require('fs').rmSync(f))\"",
+    "pretest": "tsc",
     "test": "node --test dist/*.test.js"
   },
   "keywords": [
